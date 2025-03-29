@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Tutor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav-bar">
+      <form id="settings-form">
+        <label for="difficulty">Select Difficulty</label>
+        <select id="difficulty" class="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </form>
+    </nav>
+    <div class="container">
+      <div class="card">
+        <h2>Typing Tutor</h2>
+        <p class="word" id="word"></p>
+        <input type="text" class="input" id="text">
+        <p class="time">Time: <span id="time">10s</span></p>
+        <p class="score">Score: <span id="score">0</span></p>
+        <div id="end-game-creds" class="end-game-creds">
+          <!-- <h1>Game End</h1>
+          <p>Your score is </p>
+          <button class="reload-btn" id="reload-btn">Reload</button> -->
+        </div>
+      </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
